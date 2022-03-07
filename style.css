@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    background: linear-gradient(
+        135deg,
+        #8052ec,
+        #d161ff
+    );
+    min-height: 100vh;
+}
+.container {
+  width: 300px;
+  margin: 100px auto 0;
+  text-align: right;
+}
+.container input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: rgb(185, 223, 255);
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.container input:focus {
+    outline: none;
+    background-color: #eee;
+}
+.container input::placeholder {
+    color: black;
+}
+.container button {
+  width: 20%;
+  border: none;
+  background-color: rgb(252, 174, 29);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks {
+    width: 300px;
+    background-color: white;
+    border: 2px solid rgb(185, 223, 255);
+    padding: 10px 15px;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task p {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 5px;
+    width: 70%;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.task .delete {
+    background-color: rgb(211, 8, 218);
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
